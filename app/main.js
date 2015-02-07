@@ -1,3 +1,9 @@
+
+
+if (!Game.spawns) {
+  console.log(Game.rooms)
+}
+
 var creep = Game.creeps.Worker1;
 
 //#Howdy There!!!
