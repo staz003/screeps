@@ -1,5 +1,5 @@
-CURRENT_SOURCE = "current_source"
-spawn = Game.spawns.Spawn1
+var CURRENT_SOURCE = "current_source"
+var spawn = Game.spawns.Spawn1
 
 if (!Memory.spawns[spawn.name][CURRENT_SOURCE]) {
   Memory.spawns[spawn.name][CURRENT_SOURCE] = spawn.pos.findClosest(Game.SOURCES)
