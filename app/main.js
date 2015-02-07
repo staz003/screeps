@@ -8,7 +8,7 @@ if (Object.keys(Game.creeps).length === 0) {
 }
 
 for (var i in Game.creeps) {
-  creep = Game.creeps[i]
+  var creep = Game.creeps[i]
   if(creep.energy < creep.energyCapacity) {
     var sources = creep.room.find(Game.SOURCES);
     creep.moveTo(sources[0]);
