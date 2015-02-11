@@ -56,19 +56,14 @@ function think(spawn) {
     }
   }
 
-  for (var i = 0; i < healers.length; i++) {
-    lowestWarrior
-  }
-
-
-  if (miners < 3) {
+  if (miners.length < 3) {
     spawn.createCreep([Game.WORK, Game.CARRY, Game.CARRY, Game.MOVE, Game.MOVE], undefined, {role: "miner"});
   }
 
-  if (warriors < 2) {
+  if (warriors.length < 2) {
     spawn.createCreep([Game.ATTACK, Game.ATTACK, Game.MOVE, Game.MOVE], undefined, {role: "warrior"});
   } else {
-    if (healers < 1) {
+    if (healers.length < 1) {
       spawn.createCreep([Game.HEALER, Game.HEALER, Game.HEALER, Game.HEALER, Game.MOVE], undefined, {role: "healer"});
     }
   }
