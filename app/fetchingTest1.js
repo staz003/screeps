@@ -64,7 +64,7 @@ function think(spawn) {
     spawn.createCreep([Game.ATTACK, Game.ATTACK, Game.MOVE, Game.MOVE], undefined, {role: "warrior"});
   } else {
     if (healers.length < 1) {
-      spawn.createCreep([Game.HEALER, Game.HEALER, Game.HEALER, Game.HEALER, Game.MOVE], undefined, {role: "healer"});
+      spawn.createCreep([Game.HEAL, Game.HEAL, Game.HEAL, Game.HEAL, Game.MOVE], undefined, {role: "healer"});
     }
   }
 
