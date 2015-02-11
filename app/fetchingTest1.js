@@ -38,7 +38,7 @@ function think(spawn) {
           }
         }
       } else {
-        enemy = creep.pos.findClosest(Game.HOSTILE_CREEPS)
+        var enemy = creep.pos.findClosest(Game.HOSTILE_CREEPS)
         if (enemy !== null) {
           creep.moveTo(enemy)
           creep.attack(enemy)
