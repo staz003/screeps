@@ -17,12 +17,12 @@ if (Memory.method) {
   var eaters = 0;
   for (var i in Game.creeps) {
     var creep = Game.creeps[i];
-    if (creep.memory.role === "work") {
+    if (creep.memory.role === "energyeater") {
       eaters += 1;
       creep.move(Game.TOP_LEFT);
     }
   }
-  var energy_collected = (spawn.energy + eaters * 850 - 6000 );
+  var energy_collected = (spawn.energy + (eaters * 850) - 6000 );
 
   console.log("Got " + energy_collected + " energy in " + Memory.ticks + " tics = " + (energy_collected / Memory.ticks).toFixed(2) + " e/t");
 }
