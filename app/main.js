@@ -8,12 +8,11 @@ if (Memory.method) {
   if (!Memory.ticks) Memory.ticks = 0;
   Memory.ticks += 1;
 
-  require(Memory.method)(spawn);
-
   if (!spawn.spawning) {
-    console.log("Not spawning")
-    //spawn.createCreep([Game.HEAL, Game.HEAL, Game.HEAL, Game.HEAL, Game.MOVE], undefined, {role: "energyeater"});
+    spawn.createCreep([Game.HEAL, Game.HEAL, Game.HEAL, Game.HEAL, Game.MOVE], undefined, {role: "energyeater"});
   }
+
+  require(Memory.method)(spawn);
 
   var eaters = 0;
   for (var i in Game.creeps) {
