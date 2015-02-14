@@ -24,5 +24,5 @@ if (Memory.method) {
   }
   var energy_collected = (spawn.energy + eaters * 850 - 6000 );
 
-  Console.log("Got " + energy_collected + " energy in " + Memory.ticks + " tics = " + (energy_collected / Memory.ticks).toFixed(2) + " e/t");
+  console.log("Got " + energy_collected + " energy in " + Memory.ticks + " tics = " + (energy_collected / Memory.ticks).toFixed(2) + " e/t");
 }
