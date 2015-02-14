@@ -19,6 +19,7 @@ if (Memory.method) {
     var creep = Game.creeps[i];
     if (creep.memory.role === "work") {
       eaters += 1;
+      creep.move(Game.TOP_LEFT);
     }
   }
   var energy_collected = (spawn.energy + eaters * 850 - 6000 );
