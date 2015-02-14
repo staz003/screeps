@@ -15,7 +15,7 @@ module.exports = function(spawn) {
         creep.moveTo(source);
 
         var otherCreeps = creep.pos.findInRange(Game.DROPPED_ENERGY, 1);
-        var hasCarrier = False
+        var hasCarrier = false;
         for (var i = 0; i < otherCreeps.length; i++) {
            if (otherCreeps[i].memory.role === "carry") {
             hasCarrier = true;
