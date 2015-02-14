@@ -68,6 +68,8 @@ function think(spawn) {
     }
   }
 
+  //spawn.createCreep([Game.TOUGH, Game.TOUGH, Game.TOUGH, Game.TOUGH, Game.ATTACK, Game.ATTACK, Game.ATTACK, Game.ATTACK, Game.MOVE], undefined, {role: "warrior"});
+
 
 
 
