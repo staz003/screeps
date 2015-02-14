@@ -29,4 +29,5 @@ if (Memory.method) {
 
 // team = Got 3020 energy in 500 tics = 6.04 e/t
 // team3 = Got 3290 energy in 500 tics = 6.58 e/t
+// team3.2 = Got 4490 energy in 500 tics = 8.98 e/t
 // indies = Got 1060 energy in 500 tics = 2.12 e/t

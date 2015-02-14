@@ -1,4 +1,5 @@
 
+//Better with 2 miner and 1 carry
 module.exports = function(spawn) {
   var source = spawn.pos.findClosest(Game.SOURCES);
 
