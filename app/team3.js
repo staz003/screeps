@@ -17,7 +17,17 @@ module.exports = function(spawn) {
     } else if (creep.memory.role === "carry") {
        if(creep.energy < creep.energyCapacity) {
          creep.moveTo(Game.creeps[creep.memory.teamate]);
-         creep.pickup(creep.pos.findClosest(Game.DROPPED_ENERGY))
+         var highest = 0, targetEnergy = null;
+         energies = creep.pos.findInRange(Game.DROPPED_ENERGY);
+         for (var i = 0; i < energies.length; i++) {
+           if (energies[i].energy > highest) {
+            highest = energies[i].energy;
+            targetEnergy = energies[i];
+           }
+         }
+         if (targetEnergy) {
+          creep.pickup(targetEnergy);
+         }
        } else {
          creep.moveTo(spawn);
          creep.transferEnergy(spawn);

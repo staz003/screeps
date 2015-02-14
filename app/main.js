@@ -27,5 +27,6 @@ if (Memory.method) {
   console.log("Got " + energy_collected + " energy in " + Memory.ticks + " tics = " + (energy_collected / Memory.ticks).toFixed(2) + " e/t");
 }
 
-// team = [21:17:37] Got 3020 energy in 500 tics = 6.04 e/t
-// indies = [21:22:23]Got 1060 energy in 500 tics = 2.12 e/t
+// team = Got 3020 energy in 500 tics = 6.04 e/t
+// team3 = Got 3290 energy in 500 tics = 6.58 e/t
+// indies = Got 1060 energy in 500 tics = 2.12 e/t
