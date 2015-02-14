@@ -1,5 +1,6 @@
 
 module.exports = function(spawn) {
+  var source = spawn.pos.findClosest(Game.SOURCES);
   if (Object.keys(Game.creeps) < 2) {
     spawn.createCreep([Game.WORK, Game.CARRY, Game.CARRY, Game.MOVE, Game.MOVE]);
   }
