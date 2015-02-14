@@ -18,7 +18,7 @@ module.exports = function(spawn) {
        if(creep.energy < creep.energyCapacity) {
          creep.moveTo(Game.creeps[creep.memory.teamate]);
          var highest = 0, targetEnergy = null;
-         var energies = creep.pos.findInRange(Game.DROPPED_ENERGY);
+         var energies = creep.pos.findInRange(Game.DROPPED_ENERGY, 1);
          for (var i = 0; i < energies.length; i++) {
            if (energies[i].energy > highest) {
             highest = energies[i].energy;
